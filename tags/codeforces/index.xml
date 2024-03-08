@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codeforces on PS, CP 메모장</title>
+    <link>https://saywoo.github.io/tags/codeforces/</link>
+    <description>Recent content in codeforces on PS, CP 메모장</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jan 2024 05:31:25 +0900</lastBuildDate>
+    <atom:link href="https://saywoo.github.io/tags/codeforces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Codeforces 918F - Greetings</title>
+      <link>https://saywoo.github.io/post/cf918f/</link>
+      <pubDate>Sun, 21 Jan 2024 05:31:25 +0900</pubDate>
+      <guid>https://saywoo.github.io/post/cf918f/</guid>
+      <description>문제 링크 https://codeforces.com/contest/1915/problem/F&#xA;풀이 ${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.&#xA;pair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.&#xA;그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \leq b_i$를 항상 만족하니 $a_i \leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.&#xA;정렬된 수열에서 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다.</description>
+    </item>
+  </channel>
+</rss>

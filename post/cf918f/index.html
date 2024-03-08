@@ -52,7 +52,7 @@
   />
 
   
-  <title>Test - PS, CP 메모장</title>
+  <title>Codeforces 918F - Greetings - PS, CP 메모장</title>
 
   
   <meta name="theme-color" />
@@ -61,7 +61,11 @@
   
   
   
-  <meta name="description" content="asd" />
+  <meta name="description" content="문제 링크 https://codeforces.com/contest/1915/problem/F
+풀이 ${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.
+pair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.
+그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \leq b_i$를 항상 만족하니 $a_i \leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.
+정렬된 수열에서 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다." />
   <meta name="author" content="saywoo" />
   
 
@@ -150,30 +154,41 @@
   
   
   
-  <meta itemprop="name" content="Test">
-<meta itemprop="description" content="asd"><meta itemprop="datePublished" content="2024-03-09T03:52:54+09:00" />
-<meta itemprop="dateModified" content="2024-03-09T03:52:54+09:00" />
-<meta itemprop="wordCount" content="1">
-<meta itemprop="keywords" content="PS," />
+  <meta itemprop="name" content="Codeforces 918F - Greetings">
+<meta itemprop="description" content="문제 링크 https://codeforces.com/contest/1915/problem/F
+풀이 ${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.
+pair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.
+그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \leq b_i$를 항상 만족하니 $a_i \leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.
+정렬된 수열에서 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다."><meta itemprop="datePublished" content="2024-01-21T05:31:25+09:00" />
+<meta itemprop="dateModified" content="2024-01-21T05:31:25+09:00" />
+<meta itemprop="wordCount" content="96">
+<meta itemprop="keywords" content="codeforces,C&#43;&#43;," />
   
-  <meta property="og:title" content="Test" />
-<meta property="og:description" content="asd" />
+  <meta property="og:title" content="Codeforces 918F - Greetings" />
+<meta property="og:description" content="문제 링크 https://codeforces.com/contest/1915/problem/F
+풀이 ${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.
+pair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.
+그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \leq b_i$를 항상 만족하니 $a_i \leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.
+정렬된 수열에서 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://saywoo.github.io/post/test/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2024-03-09T03:52:54+09:00" />
-<meta property="article:modified_time" content="2024-03-09T03:52:54+09:00" />
-
+<meta property="og:url" content="https://saywoo.github.io/post/cf918f/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-01-21T05:31:25+09:00" />
+<meta property="article:modified_time" content="2024-01-21T05:31:25+09:00" />
 
 
 
   
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Test"/>
-<meta name="twitter:description" content="asd"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Codeforces 918F - Greetings"/>
+<meta name="twitter:description" content="문제 링크 https://codeforces.com/contest/1915/problem/F
+풀이 ${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.
+pair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.
+그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \leq b_i$를 항상 만족하니 $a_i \leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.
+정렬된 수열에서 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다."/>
 
   
   
   
-  <link rel="canonical" href="https://saywoo.github.io/post/test/" />
+  <link rel="canonical" href="https://saywoo.github.io/post/cf918f/" />
   
   
 </head>
@@ -294,12 +309,12 @@
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Test</h1>
+    <h1 class="!my-0 pb-2.5">Codeforces 918F - Greetings</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Mar 9, 2024</time>
+      <time>Jan 21, 2024</time>
       
       
       
@@ -308,7 +323,15 @@
     
   </header>
 
-  <section><p>asd</p>
+  <section><h3 id="문제-링크">문제 링크</h3>
+<p><a href="https://codeforces.com/contest/1915/problem/F">https://codeforces.com/contest/1915/problem/F</a></p>
+<h3 id="풀이">풀이</h3>
+<p>${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.</p>
+<p>pair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.</p>
+<p>그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \leq b_i$를 항상 만족하니 $a_i \leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.</p>
+<p>정렬된 수열에서 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다.</p>
+<p>이렇게 하면 $n$개의 pair를 순회하며 매번 $O(logN)$의 시간복잡도로 $a_i \leq b_j$를 만족하는 $b_j$의 갯수를 찾아주게 됩니다.</p>
+<p>그래서 총 시간복잡도 $O(NlogN)$으로 문제를 해결할 수 있습니다.</p>
 </section>
 
   
@@ -317,8 +340,14 @@
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://saywoo.github.io/tags/ps"
-      >PS</a
+      href="https://saywoo.github.io/tags/codeforces"
+      >codeforces</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://saywoo.github.io/tags/c&#43;&#43;"
+      >C&#43;&#43;</a
     >
     
   </footer>
@@ -330,12 +359,12 @@
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    
     <a
-      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
       href="https://saywoo.github.io/post/boj2091/"
-      ><span>BOJ 2091 - 동전</span><span class="ml-1.5">→</span></a
+      ><span class="mr-1.5">←</span><span>BOJ 2091 - 동전</span></a
     >
+    
     
   </nav>
   

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>백준 on PS, CP 메모장</title>
+    <link>https://saywoo.github.io/tags/%EB%B0%B1%EC%A4%80/</link>
+    <description>Recent content in 백준 on PS, CP 메모장</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jan 2024 05:38:01 +0900</lastBuildDate>
+    <atom:link href="https://saywoo.github.io/tags/%EB%B0%B1%EC%A4%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BOJ 2091 - 동전</title>
+      <link>https://saywoo.github.io/post/boj2091/</link>
+      <pubDate>Sun, 21 Jan 2024 05:38:01 +0900</pubDate>
+      <guid>https://saywoo.github.io/post/boj2091/</guid>
+      <description>문제 링크 https://www.acmicpc.net/problem/2091&#xA;풀이 알고리즘 태그 브루트포스 알고리즘 그리디 알고리즘 $X \leq 10 \ 000$이므로, 다음과 같은 사실을 도출할 수 있습니다.&#xA;$10$센트짜리 동전만을 사용하면 최대 $1000$개 사용할 수 있음 $25$센트짜리 동전만을 사용하면 최대 $400$개 사용할 수 있음 그러므로 사용할 $10$센트 동전과 $25$센트 동전의 개수를 브루트포스로 모두 조사해보게 된다면,$O(1000 \times 400)$만큼의 시간복잡도가 필요합니다. 이렇게 $10$센트 동전과 $25$센트 동전의 개수가 정해졌다면, $1$센트 동전과 $5$센트 동전의 개수만을 정하여 $4$가지의 동전으로 $X$값을 만들 수 있는 지 판별하는 문제로 바뀌게 됩니다.</description>
+    </item>
+  </channel>
+</rss>
