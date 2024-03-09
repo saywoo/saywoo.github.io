@@ -23,10 +23,16 @@
     <loc>https://saywoo.github.io/post/test/</loc>
     <lastmod>2024-03-09T03:52:54+09:00</lastmod>
   </url><url>
+    <loc>https://saywoo.github.io/tags/asd/</loc>
+    <lastmod>2024-01-21T05:38:01+09:00</lastmod>
+  </url><url>
+    <loc>https://saywoo.github.io/categories/boj/</loc>
+    <lastmod>2024-01-21T05:38:01+09:00</lastmod>
+  </url><url>
     <loc>https://saywoo.github.io/post/boj2091/</loc>
     <lastmod>2024-01-21T05:38:01+09:00</lastmod>
   </url><url>
-    <loc>https://saywoo.github.io/tags/%EB%B0%B1%EC%A4%80/</loc>
+    <loc>https://saywoo.github.io/categories/</loc>
     <lastmod>2024-01-21T05:38:01+09:00</lastmod>
   </url><url>
     <loc>https://saywoo.github.io/tags/c&#43;&#43;/</loc>
@@ -35,12 +41,13 @@
     <loc>https://saywoo.github.io/tags/codeforces/</loc>
     <lastmod>2024-01-21T05:31:25+09:00</lastmod>
   </url><url>
+    <loc>https://saywoo.github.io/categories/codeforces/</loc>
+    <lastmod>2024-01-21T05:31:25+09:00</lastmod>
+  </url><url>
     <loc>https://saywoo.github.io/post/cf918f/</loc>
     <lastmod>2024-01-21T05:31:25+09:00</lastmod>
   </url><url>
     <loc>https://saywoo.github.io/about/</loc>
     <lastmod>2024-01-20T06:20:09+09:00</lastmod>
-  </url><url>
-    <loc>https://saywoo.github.io/categories/</loc>
   </url>
 </urlset>
