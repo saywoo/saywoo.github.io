@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on PS, CP 메모장</title>
+    <title>Tags on PS / 개발 메모장</title>
     <link>https://saywoo.github.io/tags/</link>
-    <description>Recent content in Tags on PS, CP 메모장</description>
+    <description>Recent content in Tags on PS / 개발 메모장</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Mar 2024 03:52:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2024 05:38:01 +0900</lastBuildDate>
     <atom:link href="https://saywoo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

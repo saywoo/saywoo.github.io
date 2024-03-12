@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PS, CP 메모장</title>
+    <title>PS / 개발 메모장</title>
     <link>https://saywoo.github.io/</link>
-    <description>Recent content on PS, CP 메모장</description>
+    <description>Recent content on PS / 개발 메모장</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Mar 2024 03:52:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2024 05:38:01 +0900</lastBuildDate>
     <atom:link href="https://saywoo.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://saywoo.github.io/post/test/</link>
-      <pubDate>Sat, 09 Mar 2024 03:52:54 +0900</pubDate>
-      <guid>https://saywoo.github.io/post/test/</guid>
-      <description>asd</description>
-    </item>
     <item>
       <title>BOJ 2091 - 동전</title>
       <link>https://saywoo.github.io/post/boj2091/</link>
@@ -34,7 +27,7 @@
       <link>https://saywoo.github.io/about/</link>
       <pubDate>Sat, 20 Jan 2024 06:20:09 +0900</pubDate>
       <guid>https://saywoo.github.io/about/</guid>
-      <description>PS/CP를 공부 중인 saywoo입니다 재학 2023.03 ~ : 국민대학교 인공지능학부 재학 중 알고리즘 대회 출제/검수 상세 내용 펼치기&#xD;2022.09 : 2022 중앙대학교 프로그래밍 경진대회(CPC) 출제 BOJ 25587 배수로, BOJ 25592 바둑돌 게임 2023.03 : 2023 중앙대학교 CHAC 출제 BOJ 27739 수열 재배열 2023.07 : UCPC 2023 공동 출제 / 검수 BOJ 28297 차량 모듈 제작 2023.09 : 2023 브실컵 출제 / 검수 BOJ 29715 비밀번호 찾기 2023.09 : 2023 국민대학교 &amp;amp; 중앙대학교 프로그래밍 경진대회 출제 / 검수 BOJ 29755 블랙홀과 소행성 2023.</description>
+      <description>PS / 개발을 공부 중인 대학생 saywoo입니다. 재학 2020.03 ~ 2023.02 : 시지고등학교 졸업 2023.03 ~ : 국민대학교 인공지능학부 재학 중 알고리즘 대회 출제/검수 상세 내용 펼치기&#xD;2022.09 : 2022 중앙대학교 프로그래밍 경진대회(CPC) 출제 BOJ 25587 배수로, BOJ 25592 바둑돌 게임 2023.03 : 2023 중앙대학교 CHAC 출제 BOJ 27739 수열 재배열 2023.07 : UCPC 2023 공동 출제 / 검수 BOJ 28297 차량 모듈 제작 2023.09 : 2023 브실컵 출제 / 검수 BOJ 29715 비밀번호 찾기 2023.</description>
     </item>
   </channel>
 </rss>
