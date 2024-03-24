@@ -1,0 +1,99 @@
+[
+{
+	"permalink": "https://saywoo.github.io/post/boj2091/",
+	"title": "BOJ 2091 - 동전",
+	"tags": ["greedy"],
+	"categories": ["백준"],
+	"contents": "문제 링크 https://www.acmicpc.net/problem/2091\n풀이 알고리즘 태그\r브루트포스 알고리즘 그리디 알고리즘 $X \\leq 10 \\ 000$이므로, 다음과 같은 사실을 도출할 수 있습니다.\n$10$센트짜리 동전만을 사용하면 최대 $1000$개 사용할 수 있음 $25$센트짜리 동전만을 사용하면 최대 $400$개 사용할 수 있음 그러므로 사용할 $10$센트 동전과 $25$센트 동전의 개수를 브루트포스로 모두 조사해보게 된다면,$O(1000 \\times 400)$만큼의 시간복잡도가 필요합니다. 이렇게 $10$센트 동전과 $25$센트 동전의 개수가 정해졌다면, $1$센트 동전과 $5$센트 동전의 개수만을 정하여 $4$가지의 동전으로 $X$값을 만들 수 있는 지 판별하는 문제로 바뀌게 됩니다.\n여기서 $1$센트 동전과 $5$센트 동전 중 $1$센트 동전을 최대한 많이 사용하는 것이 동전의 개수를 최대화하는 데 항상 이득이라는 것을 알 수 있습니다. 이 논리를 가지고 간단한 case work로 $O(1)$의 시간복잡도로 $1$센트 동전과 $5$센트 동전의 개수를 결정할 수 있습니다.\n총 시간복잡도는 $O(1000 \\times 400)$이 됩니다.\n소스코드 #include \u0026lt;bits/stdc++.h\u0026gt; using namespace std; int x, tmp; int ans[4], res[4], res_cnt = 0; int c[4], cost[4] = {1, 5, 10, 25}; int main() { ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0); cin \u0026gt;\u0026gt; x \u0026gt;\u0026gt; c[0] \u0026gt;\u0026gt; c[1] \u0026gt;\u0026gt; c[2] \u0026gt;\u0026gt; c[3]; // quarter 동전 개수 for (ans[3] = 0; ans[3] \u0026lt;= min(c[3], x / cost[3]); ans[3]++) { // dime 동전 개수 for (ans[2] = 0; ans[2] \u0026lt;= min(c[2], x / cost[2]); ans[2]++) { // 남은 x값으로 cent 동전과 nickel 동전 개수를 구하기 // 동전의 개수를 최대화하기 위해선 nickel 동전의 개수를 줄이는 것이 항상 이득 tmp = x - (ans[2] * cost[2] + ans[3] * cost[3]); // quarter 동전과 dime 동전 만으로 x값이 넘으면 불가능한 경우이므로 continue if (tmp \u0026lt; 0) continue; ans[0] = min(tmp, c[0]); ans[1] = (tmp - ans[0] + cost[1] - 1) / cost[1]; // cent 동전과 nickel 동전으로 남은 값을 채우는 게 불가능한 경우 continue if (ans[1] \u0026gt; c[1]) continue; if (ans[0] * cost[0] + ans[1] * cost[1] \u0026gt; tmp) { ans[0] -= (ans[0] * cost[0] + ans[1] * cost[1]) - tmp; if (ans[0] \u0026lt; 0) continue; } // 만든 경우가 최대인 경우, 결과값을 갱신 if (ans[0] + ans[1] + ans[2] + ans[3] \u0026gt; res_cnt) { res_cnt = ans[0] + ans[1] + ans[2] + ans[3]; for (int i = 0; i \u0026lt; 4; i++) res[i] = ans[i]; } } } for (int i = 0; i \u0026lt; 4; i++) cout \u0026lt;\u0026lt; res[i] \u0026lt;\u0026lt; \u0026#34; \u0026#34;; return 0; } "
+},
+{
+	"permalink": "https://saywoo.github.io/categories/",
+	"title": "Categories",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/tags/greedy/",
+	"title": "greedy",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/post/",
+	"title": "Posts",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/",
+	"title": "PS / 개발 메모장",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/tags/",
+	"title": "Tags",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/categories/%EB%B0%B1%EC%A4%80/",
+	"title": "백준",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/tags/binary_search/",
+	"title": "binary_search",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/post/cf918f/",
+	"title": "Codeforces 918F - Greetings",
+	"tags": ["segtree", "binary_search"],
+	"categories": ["코포"],
+	"contents": "문제 링크 https://codeforces.com/contest/1915/problem/F\n풀이 ${ a_i, b_i }$를 하나의 pair로 만든 후, $n$개의 pair를 $b_i$를 기준으로 오름차순으로 정렬해줍니다.\npair를 정렬한 후, $n$개의 pair를 차례대로 순회하겠습니다.\n그러면 이전에 순회했던 pair를 ${a_j, b_j}$라고 할 때, $b_j \\leq b_i$를 항상 만족하니 $a_i \\leq b_j$를 만족해야 $i, j$가 서로 만나게 된다는 것을 관찰할 수 있습니다.\n정렬된 수열에서 $a_i \\leq b_j$를 만족하는 $b_j$의 갯수를 빠르게 찾기 위해 파라메트릭 서치 또는 좌표압축을 이용한 세그먼트 트리를 사용할 수 있습니다.\n이렇게 하면 $n$개의 pair를 순회하며 매번 $O(logN)$의 시간복잡도로 $a_i \\leq b_j$를 만족하는 $b_j$의 갯수를 찾아주게 됩니다.\n그래서 총 시간복잡도 $O(NlogN)$으로 문제를 해결할 수 있습니다.\n"
+},
+{
+	"permalink": "https://saywoo.github.io/tags/segtree/",
+	"title": "segtree",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/categories/%EC%BD%94%ED%8F%AC/",
+	"title": "코포",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/about/",
+	"title": "About",
+	"tags": [],
+	"categories": [],
+	"contents": "PS / 개발을 공부 중인 대학생 saywoo입니다. 재학 2020.03 ~ 2023.02 : 시지고등학교 졸업 2023.03 ~ : 국민대학교 인공지능학부 재학 중 알고리즘 대회 출제/검수 상세 내용 펼치기\r2022.09 : 2022 중앙대학교 프로그래밍 경진대회(CPC) 출제 BOJ 25587 배수로, BOJ 25592 바둑돌 게임 2023.03 : 2023 중앙대학교 CHAC 출제 BOJ 27739 수열 재배열 2023.07 : UCPC 2023 공동 출제 / 검수 BOJ 28297 차량 모듈 제작 2023.09 : 2023 브실컵 출제 / 검수 BOJ 29715 비밀번호 찾기 2023.09 : 2023 국민대학교 \u0026amp; 중앙대학교 프로그래밍 경진대회 출제 / 검수 BOJ 29755 블랙홀과 소행성 2023.12 : 2023 서울시립대학교 프로그래밍 경진대회 (UOSPC) 검수 2023.12 : 2023 제2회 미적확통컵 출제 / 검수 BOJ 30997 가중치 복권 2024.01 : 제3회 보라매컵 검수 바로가기 백준 온라인 저지 : saywoo Codeforces : saywoo Atcoder : saywoo Github : saywoo "
+},
+{
+	"permalink": "https://saywoo.github.io/search/",
+	"title": "Search Result",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+},
+{
+	"permalink": "https://saywoo.github.io/series/",
+	"title": "Series",
+	"tags": [],
+	"categories": [],
+	"contents": ""
+}]
