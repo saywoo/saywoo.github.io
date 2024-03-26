@@ -23,6 +23,11 @@ let fuseOptions = {
   ]
 };
 
+function SearchbtnClick() {
+  const inp = document.getElementById('search-query');
+  location.href = "/search/?q=" + inp.value;
+}
+
 function getUrlParameter(name) {
   name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
   let regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -36,7 +41,7 @@ if(searchQuery){
   document.getElementById("search-query").value = searchQuery;
   executeSearch(searchQuery);
 } else {
-  document.getElementById('search-results').innerHTML = "<p class=\"no-results\"></p>";
+  document.getElementById('search-count').innerHTML = "<h2 id=\"search-count\">Search results - 0 posts</h2>";
 }
 
 function executeSearch(searchQuery) {
@@ -51,8 +56,10 @@ function executeSearch(searchQuery) {
     if (result.length > 0) {
       populateResults(result);
     }
-
-    if (ok_count == 0) document.getElementById('search-results').innerHTML = "<p class=\"no-results\"></p>";
+    
+    let temp = "Search results - " + ok_count.toString() + " posts";
+    if (ok_count == 0) document.getElementById('search-count').innerHTML = "<h2 id=\"search-count\">Search results - 0 posts</h2>";
+    else document.getElementById('search-count').innerHTML = "<h2 id=\"search-count\">" + temp + "</h2>";
   });
 }
 
@@ -130,6 +137,7 @@ function populateResults(result){
     if (categories) {
       frag.querySelector(".search_categories").textContent = categories;
     }
+    frag.querySelector(".search_date").textContent = value.item.date.substring(0, 10);
     snippetHighlights.forEach( function (snipvalue, snipkey) {
       let markjs = new Mark(frag);
       markjs.mark(snipvalue);
